@@ -6,7 +6,7 @@
 
 ## 📋 Overview
 
-An advanced AI-based cybersecurity system designed to detect cyber threats in network traffic using machine learning algorithms and real-time anomaly detection. This system leverages ensemble methods to identify suspicious patterns and unknown threats that traditional security systems often miss.
+An advanced AI-based cybersecurity system designed to detect cyber threats in network traffic using machine learning algorithms and real-time anomaly detection. This system leverages ensemble methods to identify both known and unknown threats with exceptional accuracy.
 
 **Primary Use Cases:**
 - Security Operations Centers (SOC)
@@ -48,6 +48,8 @@ Traditional signature-based security systems struggle with zero-day attacks and 
 ---
 
 ## 🏗️ Architecture
+
+```
 Raw Network Traffic 
 ↓ 
 Data Loading 
@@ -61,7 +63,7 @@ Model Training (IF & RF)
 Real-time Predictions 
 ↓ 
 Visualization & SOC Dashboard
-
+```
 
 ---
 
@@ -75,6 +77,7 @@ Visualization & SOC Dashboard
 
 ## ⚙️ Installation
 
+```bash
 # Clone the repository
 git clone https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System.git
 cd AI-Cybersecurity-Threat-Detection-System
@@ -85,49 +88,65 @@ pip install -r requirement.txt
 # Create virtual environment (optional but recommended)
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-▶️ How to Run
+---
 
-Train the Model
+## ▶️ How to Run
+
+### Train the Model
+```bash
 python main.py
-
+```
 Trains both Isolation Forest and Random Forest models on the UNSW-NB15 dataset.
 
-Launch the SOC Dashboard
+### Launch the SOC Dashboard
+```bash
 streamlit run dashboard/app.py
-
+```
 Opens interactive dashboard at http://localhost:8501
 
-Run Tests
+### Run Tests
+```bash
 python test.py
+```
 
-📈 Model Performance
-Metric	Random Forest	Isolation Forest
-Accuracy	~98%	~95%
-Detection Type	Supervised	Unsupervised
-Use Case	Known threats	Unknown threats
+---
 
+## 📈 Model Performance
 
-🎨 Features
-✨ Real-time Threat Detection
+| Metric | Random Forest | Isolation Forest |
+|--------|--------------|------------------|
+| Accuracy | ~98% | ~95% |
+| Detection Type | Supervised | Unsupervised |
+| Use Case | Known threats | Unknown threats |
 
-Live network traffic analysis
-Instant anomaly detection and flagging
-📊 Interactive SOC Dashboard
+---
 
-Real-time metrics and KPIs
-Visual threat indicators
-Network traffic visualization
-📝 Live Logs & Alerting
+## 🎨 Features
 
-Real-time event feed
-Threat severity indicators
-Detailed anomaly reports
-🔍 Risk Assessment
+### ✨ Real-time Threat Detection
+- Live network traffic analysis
+- Instant anomaly detection and flagging
 
-Risk scoring for each connection
-Threat classification and categorization
-🎓 Learning Outcomes
+### 📊 Interactive SOC Dashboard
+- Real-time metrics and KPIs
+- Visual threat indicators
+- Network traffic visualization
+
+### 📝 Live Logs & Alerting
+- Real-time event feed
+- Threat severity indicators
+- Detailed anomaly reports
+
+### 🔍 Risk Assessment
+- Risk scoring for each connection
+- Threat classification and categorization
+
+---
+
+## 🎓 Learning Outcomes
+
 Upon completing this project, you'll understand:
 
 ✅ End-to-end ML pipeline development
@@ -137,75 +156,109 @@ Upon completing this project, you'll understand:
 ✅ Real-world error handling and edge cases
 ✅ Deployment considerations for security systems
 
-📌 Future Improvements
-🚀 Real-time Streaming: Apache Kafka/Spark integration
-🔌 API Deployment: FastAPI/Flask REST endpoints
-📱 Mobile Alerts: Push notifications for critical threats
-🤖 Deep Learning: LSTM/GRU models for sequential patterns
-☁️ Cloud Scaling: AWS/Azure/GCP deployment
+---
 
+## 📌 Future Improvements
 
-🗓️ Development Timeline
+- 🚀 Real-time Streaming: Apache Kafka/Spark integration
+- 🔌 API Deployment: FastAPI/Flask REST endpoints
+- 📱 Mobile Alerts: Push notifications for critical threats
+- 🤖 Deep Learning: LSTM/GRU models for sequential patterns
+- ☁️ Cloud Scaling: AWS/Azure/GCP deployment
 
-Day	Task	Details
-1️⃣	Setup	Project structure, requirements.txt, git initialization
-2️⃣	Dataset	Load UNSW-NB15 data, exploratory analysis
-3️⃣	Preprocessing	Data cleaning, encoding, normalization
-4️⃣	Models	Isolation Forest & Random Forest implementation
-5️⃣	Evaluation	Metrics, confusion matrices, ROC curves
-6️⃣	Visualization	Analysis graphs, anomaly distribution plots
-7️⃣	Dashboard	Streamlit UI, real-time SOC interface
-📸 Project Proof & Visualizations
-1. Dataset Preview
-Shows the first records and statistics of the UNSW-NB15 dataset ![Dataset Preview](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Dataset_Preview.png)
+---
 
-2. Preprocessed Data
-Cleaned and normalized data ready for model training ![Preprocessed Data](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/preprocessed_data.png)
+## 🗓️ Development Timeline
 
-3. Random Forest Model Evaluation
-Performance metrics and classification results for RF model ![Random Forest Evaluation](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Random_Forest_Evaluation.png)
+| Day | Task | Details |
+|-----|------|---------|
+| 1️⃣ | Setup | Project structure, requirements.txt, git initialization |
+| 2️⃣ | Dataset | Load UNSW-NB15 data, exploratory analysis |
+| 3️⃣ | Preprocessing | Data cleaning, encoding, normalization |
+| 4️⃣ | Models | Isolation Forest & Random Forest implementation |
+| 5️⃣ | Evaluation | Metrics, confusion matrices, ROC curves |
+| 6️⃣ | Visualization | Analysis graphs, anomaly distribution plots |
+| 7️⃣ | Dashboard | Streamlit UI, real-time SOC interface |
 
-4. Isolation Forest Model Evaluation
-Performance metrics for unsupervised anomaly detection ![Isolation Forest Evaluation](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Isolation_Forest_Evaluation.png)
+---
 
-5. Confusion Matrix - Random Forest
-Classification performance visualization ![Random Forest Confusion Matrix](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/confusion_rf.png)
+## 📸 Project Proof & Visualizations
 
-6. Confusion Matrix - Isolation Forest
-Anomaly detection performance visualization ![Isolation Forest Confusion Matrix](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/confusion_iso.png)
+### 1. Dataset Preview
+Shows the first records and statistics of the UNSW-NB15 dataset
+![Dataset Preview](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Dataset_Preview.png)
 
-7. Anomaly Distribution Graph
-Distribution of detected anomalies across network traffic ![Anomaly Distribution](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Anomaly_Distribution_graph.png)
+### 2. Preprocessed Data
+Cleaned and normalized data ready for model training
+![Preprocessed Data](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/preprocessed_data.png)
 
-8. SOC Dashboard Interface
-Real-time threat detection and monitoring dashboard ![Dashboard UI](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Dashboard_UI.png)
+### 3. Random Forest Model Evaluation
+Performance metrics and classification results for RF model
+![Random Forest Evaluation](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Random_Forest_Evaluation.png)
 
-9. Live Logs & SOC Feed
-Real-time event stream and threat alerts ![Live Logs](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Live_Logs_UI.png)
+### 4. Isolation Forest Model Evaluation
+Performance metrics for unsupervised anomaly detection
+![Isolation Forest Evaluation](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Isolation_Forest_Evaluation.png)
 
-🎥 Demo Video
-Watch the dashboard in action: Dashboard Demo Video
+### 5. Confusion Matrix - Random Forest
+Classification performance visualization
+![Random Forest Confusion Matrix](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/confusion_rf.png)
 
-👨‍💻 Author
-Aniket Satpathy
+### 6. Confusion Matrix - Isolation Forest
+Anomaly detection performance visualization
+![Isolation Forest Confusion Matrix](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/confusion_iso.png)
 
-GitHub: @Aniketsatpathy
-Project: AI Cybersecurity Threat Detection System
+### 7. Anomaly Distribution Graph
+Distribution of detected anomalies across network traffic
+![Anomaly Distribution](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Anomaly_Distribution_graph.png)
 
-📄 License
+### 8. SOC Dashboard Interface
+Real-time threat detection and monitoring dashboard
+![Dashboard UI](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Dashboard_UI.png)
+
+### 9. Live Logs & SOC Feed
+Real-time event stream and threat alerts
+![Live Logs](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System/raw/main/images/Live_Logs_UI.png)
+
+---
+
+## 🎥 Demo Video
+
+Watch the dashboard in action: [Dashboard Demo Video](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System)
+
+---
+
+## 👨‍💻 Author
+
+**Aniket Satpathy**
+
+- GitHub: [@Aniketsatpathy](https://github.com/Aniketsatpathy)
+- Project: AI Cybersecurity Threat Detection System
+
+---
+
+## 📄 License
+
 This project is open-source and available under the MIT License.
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
+
 Contributions are welcome! Please feel free to:
 
-Report issues and bugs
-Suggest improvements and new features
-Submit pull requests
+- Report issues and bugs
+- Suggest improvements and new features
+- Submit pull requests
 
-📚 Additional Resources
-UNSW-NB15 Dataset Paper
-Scikit-learn Documentation
-Streamlit Documentation
+---
 
+## 📚 Additional Resources
 
-Last Updated: 2026-04-15
+- [UNSW-NB15 Dataset Paper](https://github.com/Aniketsatpathy/AI-Cybersecurity-Threat-Detection-System)
+- [Scikit-learn Documentation](https://scikit-learn.org/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+
+---
+
+**Last Updated: 2026-04-15**
