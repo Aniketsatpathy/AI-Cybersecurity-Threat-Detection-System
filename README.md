@@ -150,12 +150,12 @@ Built SOC-style Streamlit dashboard with real-time detection
 ---
 
 ### 6. Dashboard UI
-![Dashboard](images/Random_Forest_Evaluation.png)
+![Dashboard](images/Dashboard_UI.png)
 
 ---
 
 ### 7. Live Logs / SOC Feed
-![Logs](images/Isolation_Foreset_Evaluation.png)
+![Logs](images/Live_Logs_UI.png)
 
 ---
 
