@@ -173,5 +173,4 @@ Built SOC-style Streamlit dashboard with real-time detection
 
 ### 🎥 Demo Video
 [Watch Demo](./images/dashboard_demo.mp4)
----
 
