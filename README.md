@@ -124,6 +124,8 @@ Built SOC-style Streamlit dashboard with real-time detection
 
 **#PROOF CHECKLIST**
 
+## 📸 PROOF CHECKLIST
+
 ### 1. Dataset Preview
 ![Dataset Preview](./images/Dataset_Preview.png)
 
@@ -134,33 +136,42 @@ Built SOC-style Streamlit dashboard with real-time detection
 
 ---
 
-### 3. Confusion Matrix (Random Forest)
+### 3. Random Forest Evaluation
+![RF Evaluation](./images/Random_Forest_Evaluation.png)
+
+---
+
+### 4. Isolation Forest Evaluation
+![ISO Evaluation](./images/Isolation_Forest_Evaluation.png)
+
+---
+
+### 5. Confusion Matrix (Random Forest)
 ![RF Confusion Matrix](./images/confusion_rf.png)
 
 ---
 
-### 4. Confusion Matrix (Isolation Forest)
+### 6. Confusion Matrix (Isolation Forest)
 ![ISO Confusion Matrix](./images/confusion_iso.png)
 
 ---
 
-### 5. Detection Graph
+### 7. Detection Graph
 ![Anomaly Distribution](./outputs/anomaly_distribution.png)
 
 ---
 
-### 6. Dashboard UI
+### 8. Dashboard UI
 ![Dashboard](./images/Dashboard_UI.png)
 
 ---
 
-### 7. Live Logs / SOC Feed
+### 9. Live Logs / SOC Feed
 ![Logs](./images/Live_Logs_UI.png)
 
 ---
 
 ### 🎥 Demo Video
+[Watch Demo](./images/dashboard_demo.mp4)
+---
 
-👉 [Watch Dashboard Demo](./images/dashboard_demo.mp4)
-
-👉 SOC feed
