@@ -82,33 +82,44 @@ API deployment
 Aniket
 ---
 
-## Day 1
+---
+
+## 🗓️ Day 1 – Setup
+- Folder structure
+- requirements.txt  
+**Commit:**
+```bash
+Initial project setup and structure
+
+🗓️ Day 2 – Dataset
+Load dataset
+Show preview
 Commit:
-Initial project setup
----
+Added dataset loading and exploration
 
-## Day 2
-Added dataset loading
----
+🗓️ Day 3 – Preprocessing
+Cleaning + encoding
+Commit:
+Implemented data preprocessing pipeline
 
-## Day 3
-Implemented preprocessing
----
+🗓️ Day 4 – Model
+Train models
+Commit:
+Implemented Isolation Forest and Random Forest models
 
-## Day 4
-Added ML models
----
+🗓️ Day 5 – Evaluation
+Metrics + confusion matrix
+Commit:
+Added model evaluation metrics and visualization
 
-## Day 5
-Added evaluation metrics
----
+🗓️ Day 6 – Visualization
+Graphs
+Commit:
+Added data visualization and analysis graphs
 
-## Day 6
-Added visualization
----
-
-## Day 7
-Built Streamlit dashboard
----
+🗓️ Day 7 – Dashboard
+Streamlit UI
+Commit:
+Built SOC-style Streamlit dashboard with real-time detection
 
 **#PROOF CHECKLIST**
