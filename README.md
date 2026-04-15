@@ -80,9 +80,6 @@ API deployment
 
 **👨‍💻 Author**
 Aniket
-
-# 📅 PART L — COMMIT PLAN
-
 ---
 
 ## Day 1
