@@ -123,3 +123,44 @@ Commit:
 Built SOC-style Streamlit dashboard with real-time detection
 
 **#PROOF CHECKLIST**
+
+### 1. Dataset Preview
+![Dataset Preview](images/Dataset_Preview.png)
+
+---
+
+### 2. Preprocessing Output
+![Preprocessed Data](images/preprocessed_data.png)
+
+---
+
+### 3. Confusion Matrix (Random Forest)
+![RF Confusion Matrix](images/confusion_rf.png)
+
+---
+
+### 4. Confusion Matrix (Isolation Forest)
+![ISO Confusion Matrix](images/confusion_iso.png)
+
+---
+
+### 5. Detection Graph
+![Anomaly Distribution](outputs/anomaly_distribution.png)
+
+---
+
+### 6. Dashboard UI
+![Dashboard](images/Dashboard_UI.png)
+
+---
+
+### 7. Live Logs / SOC Feed
+![Logs](images/Live_Logs_UI.png)
+
+---
+
+### 🎥 Demo Video
+
+👉 [Watch Dashboard Demo](images/dashboard_demo.mp4)
+
+👉 SOC feed
