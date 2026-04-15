@@ -123,3 +123,21 @@ Commit:
 Built SOC-style Streamlit dashboard with real-time detection
 
 **#PROOF CHECKLIST**
+1. Dataset Preview
+  ![Dataset_Preview](images/Dataset_Preview.png)
+
+2. Preprocessing Output
+  ![preprocessed_data](images/preprocessed_data.png)
+
+3. Confusion Matrix
+   ![confusion_matrix](outputs/confusion_matrix.png)
+
+5. Detection Graph
+   ![anomaly_distribution](outputs/anomaly_distribution.png)
+
+6. Dashboard UI
+  
+
+7. Live Logs
+
+👉 SOC feed
